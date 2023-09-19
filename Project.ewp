@@ -352,7 +352,6 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\Inc</state>
-                    <state>$PROJ_DIR$\STM32CubeF4\Drivers\CMSIS\Core\Include</state>
                     <state>$PROJ_DIR$\STM32CubeF4\Drivers\CMSIS\Device\ST\STM32F4xx\Include</state>
                     <state>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Inc</state>
                     <state>$PROJ_DIR$\STM32CubeF4\Drivers\BSP\STM32F4xx_Nucleo_144</state>
@@ -1096,14 +1095,14 @@
         <name>Application</name>
         <group>
             <name>EWARM</name>
+            <file>
+                <name>$PROJ_DIR$\startup_stm32f429xx.s</name>
+            </file>
         </group>
         <group>
             <name>User</name>
             <file>
                 <name>$PROJ_DIR$\Src\ei_main.cpp</name>
-                <excluded>
-                    <configuration>STM32F429ZI_NUCLEO_144</configuration>
-                </excluded>
             </file>
             <file>
                 <name>$PROJ_DIR$\Src\main.c</name>
