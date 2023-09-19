@@ -3,5 +3,9 @@ settings/
 */Exe
 */List
 */Obj
+.ninja_deps
+.ninja_log
+.Project_build_cache
+STM32CubeF4/
 
 *.ewt

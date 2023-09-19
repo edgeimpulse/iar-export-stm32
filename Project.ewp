@@ -351,10 +351,11 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$\..\Inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STM32F4xx_Nucleo_144</state>
+                    <state>$PROJ_DIR$\Inc</state>
+                    <state>$PROJ_DIR$\STM32CubeF4\Drivers\CMSIS\Core\Include</state>
+                    <state>$PROJ_DIR$\STM32CubeF4\Drivers\CMSIS\Device\ST\STM32F4xx\Include</state>
+                    <state>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Inc</state>
+                    <state>$PROJ_DIR$\STM32CubeF4\Drivers\BSP\STM32F4xx_Nucleo_144</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -395,7 +396,7 @@
                 </option>
                 <option>
                     <name>IccLang</name>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>IccCDialect</name>
@@ -456,11 +457,11 @@
                 </option>
                 <option>
                     <name>IccExceptions2</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IccRTTI2</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>OICompilerExtraOption</name>
@@ -1100,6 +1101,9 @@
             <name>User</name>
             <file>
                 <name>$PROJ_DIR$\Src\ei_main.cpp</name>
+                <excluded>
+                    <configuration>STM32F429ZI_NUCLEO_144</configuration>
+                </excluded>
             </file>
             <file>
                 <name>$PROJ_DIR$\Src\main.c</name>
@@ -1113,44 +1117,41 @@
         </group>
     </group>
     <group>
-        <name>Drivers</name>
+        <name>ST Drivers</name>
         <group>
             <name>BSP</name>
-            <group>
-                <name>STM32F4xx_Nucleo_144</name>
-                <file>
-                    <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\BSP\STM32F4xx_Nucleo_144\stm32f4xx_nucleo_144.c</name>
-                </file>
-            </group>
+            <file>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\BSP\STM32F4xx_Nucleo_144\stm32f4xx_nucleo_144.c</name>
+            </file>
         </group>
         <group>
             <name>CMSIS</name>
             <file>
-                <name>$PROJ_DIR$\..\Src\system_stm32f4xx.c</name>
+                <name>$PROJ_DIR$\Src\system_stm32f4xx.c</name>
             </file>
         </group>
         <group>
             <name>STM32F4xx_HAL_Driver</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</name>
+                <name>$PROJ_DIR$\STM32CubeF4\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c</name>
             </file>
         </group>
     </group>
