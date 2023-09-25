@@ -106,7 +106,7 @@ int main(void)
 
   printf("** ST system init finished successfully. ** \n\r");
 
-  //ei_main();
+  ei_main();
     
   
   /* Infinite loop */

@@ -1102,7 +1102,7 @@
         <group>
             <name>User</name>
             <file>
-                <name>$PROJ_DIR$\Src\ei_main.cpp</name>
+                <name>$PROJ_DIR$\Src\ei_standalone.cpp</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\Src\main.c</name>
