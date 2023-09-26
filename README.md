@@ -21,6 +21,8 @@ $ git submodule update --init
 
 How to deploy your model to a library that is digestable by IAR Embedded Workbench is described on our documentation page.
 
+<mark>The unzipped library folder should be placed in the root folder of the project</mark>
+
 ## IAR Project set up
 
 Settings already configured in correct project but must be configured when starting a new project:
