@@ -6,6 +6,8 @@ This example is based on the on the STMicroelectronics [Nucleo-F439ZI](https://w
 
 ## Getting started
 
+For general documentation on how to start with IAR library deployments visit the [documentation](https://docs.edgeimpulse.com/docs/run-inference/iar-library.md) page on Edge Impulse.
+
 ### Setting up the project
 
 Start with the cloning this repository to your computer:
@@ -27,13 +29,13 @@ How to deploy your model to a library that is digestable by IAR Embedded Workben
 
 ## IAR Project set up
 
-Settings already configured in correct project but must be configured when starting a new project:
+Following project settings are already configured in current project but must be configured when starting a new project:
 
 - CMSIS should be disabled in the project settings
 - Library selection set to LIBC++
 - Configure C++
 - Set HEAP size in .icf (linker) file to a reasonable number
-- Stack size at least 2048 bytes
+- Stack size should be at least 2048 bytes
 
 This are the heap and stack sizes for STM32F4xx:
 
@@ -42,4 +44,4 @@ define symbol __ICFEDIT_size_cstack__ = 0x800;
 define symbol __ICFEDIT_size_heap__   = 0x20000;
 ```
 
-Size of the heap memory needed depends heavily on the size of the model. Consult the RAM number in the deployment page in Edge Impulse studio for the minimal required heap memory needed for your application.
+Size of the heap memory needed depends on the size of the model. Consult the RAM number in the deployment page in Edge Impulse studio for the minimal required heap memory needed for your application.
