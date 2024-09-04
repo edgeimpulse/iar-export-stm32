@@ -2,11 +2,11 @@
 
 An IAR Embedded Workbench example project that can be used as a starting point for running IAR library models (deployed in Edge Impulse studio) on actual hardware.
 
-This example is based on the on the STMicroelectronics [Nucleo-F439ZI](https://www.st.com/en/evaluation-tools/nucleo-f439zi.html) development board. But can be easily swapped out for any of the other boards in the [STM32CubeF4](https://github.com/STMicroelectronics/STM32CubeF4) BSP.
+This example is based on the on the STMicroelectronics [Nucleo-F429ZI](https://www.st.com/en/evaluation-tools/nucleo-f429zi.html), which is not longer in production. The [Nucleo-F439ZI](https://www.st.com/en/evaluation-tools/nucleo-f439zi.html) development board is it's successor and also suitable to run this project. But as this example doesn't rely heavily on processor architecture or pheripherals, the STM device can be easily swapped out for any of the other boards in the [STM32CubeF4](https://github.com/STMicroelectronics/STM32CubeF4) BSP.
 
 ## Getting started
 
-For general documentation on how to start with IAR library deployments visit the [documentation](https://docs.edgeimpulse.com/docs/run-inference/iar-library.md) page on Edge Impulse.
+For general documentation on how to start with IAR library deployments visit the [documentation](https://docs.edgeimpulse.com/docs/run-inference/iar-library) page on Edge Impulse.
 
 ### Setting up the project
 
@@ -45,3 +45,8 @@ define symbol __ICFEDIT_size_heap__   = 0x20000;
 ```
 
 Size of the heap memory needed depends on the size of the model. Consult the RAM number in the deployment page in Edge Impulse studio for the minimal required heap memory needed for your application.
+
+## Running and validating
+
+For importing and building the firmware including an Edge Impulse model follow the instructions from the online [documentation](https://docs.edgeimpulse.com/docs/run-inference/iar-library).
+To view the inference results on device, open a serial terminal (like Tera Term on Windows or Minicom on Linux / Mac). Serial settings should be configured as follows: 115200 baudrate 8N1.
